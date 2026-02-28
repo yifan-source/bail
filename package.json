@@ -1,5 +1,5 @@
 {
-    "name": "@zebuild/baileys-pro",
+    "name": "@yifan-source/bail",
     "version": "2.0.3",
     "description": "WhatsApp API Modification By zebuild",
     "keywords": [
@@ -12,12 +12,12 @@
         "botwa",
         "stvnnvs"
     ],
-    "homepage": "https://github.com/zebuildV10/bails",
+    "homepage": "https://github.com/yifan-source/bail",
     "repository": {
-        "url": "https://github.com/zebuildV10/bails"
+        "url": "https://github.com/yifan-source/bail"
     },
     "license": "MIT",
-    "author": "zebuild",
+    "author": "—YífànTzyy.js",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
