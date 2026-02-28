@@ -1,7 +1,7 @@
 # WhatsApp Baileys
 
 <p align="center">
-  <img src="https://files.catbox.moe/369pux.jpg" alt="Thumbnail" />
+  <img src="https://files.catbox.moe/3tt21h.jpg" alt="Thumbnail" />
 </p>
 
 WhatsApp Baileys is an open-source library designed to help developers build automation solutions and integrations with WhatsApp efficiently and directly. Using websocket technology without the need for a browser, this library supports a wide range of features such as message management, chat handling, group administration, as well as interactive messages and action buttons for a more dynamic user experience.
@@ -37,14 +37,14 @@ Begin by installing the library via your preferred package manager, then follow 
 Get ID channel 
 
 ```javascript
-await sock.newsletterId(url)
+await YifanModss.newsletterId(url)
 ```
 
 ### Check banned number
 You can see the status of blocked numbers here 
 
 ```javascript
-await sock.checkWhatsApp(jid)
+await YifanModss.checkWhatsApp(jid)
 ```
 
 ---
@@ -55,9 +55,9 @@ await sock.checkWhatsApp(jid)
 Send group status with version 2 
 
 ```javascript
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
      groupStatusMessage: {
-          text: "Hello World"
+          text: "yey"
      }
 });
 ```
@@ -66,10 +66,10 @@ await sock.sendMessage(jid, {
 Send multiple images in a single album message:
 
 ```javascript
-await sock.sendMessage(jid, { 
+await YifanModss.sendMessage(jid, { 
     albumMessage: [
-        { image: cihuy, caption: "Foto pertama" },
-        { image: { url: "URL IMAGE" }, caption: "Foto kedua" }
+        { image: cihuy, caption: "onePhotos" },
+        { image: { url: "URL IMAGE" }, caption: "twoPhotos" }
     ] 
 }, { quoted: m });
 ```
@@ -78,17 +78,17 @@ await sock.sendMessage(jid, {
 Create and send WhatsApp event invitations:
 
 ```javascript
-await sock.sendMessage(jid, { 
+await YifanModss.sendMessage(jid, { 
     eventMessage: { 
         isCanceled: false, 
         name: "Hello World", 
-        description: "yume native", 
+        description: "yifantzyy", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
             name: "rowrrrr" 
         }, 
-        joinLink: "https://call.whatsapp.com/video/zebuild", 
+        joinLink: "https://call.whatsapp.com/video/yifantzyy", 
         startTime: "1763019000", 
         endTime: "1763026200", 
         extraGuestsAllowed: false 
@@ -100,7 +100,7 @@ await sock.sendMessage(jid, {
 Display poll results with vote counts:
 
 ```javascript
-await sock.sendMessage(jid, { 
+await YifanModss.sendMessage(jid, { 
     pollResultMessage: { 
         name: "Hello World", 
         pollVotes: [
@@ -121,11 +121,11 @@ await sock.sendMessage(jid, {
 Send basic interactive messages with copy button functionality:
 
 ```javascript
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @zebuild ",
+        footer: "YouTube : @yifanoffc",
         buttons: [
             {
                 name: "cta_copy",
@@ -144,30 +144,30 @@ await sock.sendMessage(jid, {
 Send interactive messages with buttons, copy actions, and native flow features:
 
 ```javascript
-await sock.sendMessage(jid, {    
+await YifanModss.sendMessage(jid, {    
     interactiveMessage: {      
         header: "Hello World",
         title: "Hello World",      
-        footer: "telegram: @zebuild",      
+        footer: "YouTube : @yifanoffc",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
             messageParamsJson: JSON.stringify({          
                 limited_time_offer: {            
                     text: "idk hummmm?",            
-                    url: "https://t.me/zebuild",            
-                    copy_code: "yume",            
+                    url: "https://youtube.com/@yifanoffc",            
+                    copy_code: "youtube.com/@yifanoffc",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "yume native",            
-                    button_title: "yume native"          
+                    list_title: "yifantzyy",            
+                    button_title: "yifantzyy"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
                     description: "bomboclard",            
-                    canonical_url: "https://t.me/zebuild",            
+                    canonical_url: "https://youtube.com/@yifanoffc",            
                     domain: "shop.example.com",            
                     button_index: 0          
                 }        
@@ -195,8 +195,8 @@ await sock.sendMessage(jid, {
                                 highlight_label: "label",                  
                                 rows: [                    
                                     {                      
-                                        title: "@zebuild",                      
-                                        description: "love you",                      
+                                        title: "@yifanmodss",                      
+                                        description: "stupid!!",                      
                                         id: "row_2"                    
                                     }                  
                                 ]                
@@ -223,11 +223,11 @@ await sock.sendMessage(jid, {
 Send interactive messages with thumbnail image and copy button:
 
 ```javascript
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @zebuild",
+        footer: "YouTube : @yifanoffc",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
             {
@@ -247,7 +247,7 @@ await sock.sendMessage(jid, {
 Send product catalog messages with buttons and merchant information:
 
 ```javascript
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
     productMessage: {
         title: "Produk Contoh",
         description: "Ini adalah deskripsi produk",
@@ -276,14 +276,14 @@ await sock.sendMessage(jid, {
 Send interactive messages with document from buffer (file system) - **Note: Documents only support buffer**:
 
 ```javascript
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @zebuild",
+        footer: "YouTube : @yifanoffc",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "zebuild.pdf",
+        fileName: "yifantzyy.js",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         contextInfo: {
             mentionedJid: [jid],
@@ -291,12 +291,12 @@ await sock.sendMessage(jid, {
             isForwarded: false
         },
         externalAdReply: {
-            title: "shenń Bot",
-            body: "anu team",
+            title: "YîfánMødss",
+            body: "KynaX Community",
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
-            sourceUrl: "https://t.me/zebuild",
+            sourceUrl: "https://youtube.com/@yifanoffc",
             showAdAttribution: true,
             renderLargerThumbnail: false         
         },
@@ -304,9 +304,9 @@ await sock.sendMessage(jid, {
             {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: "Telegram",
-                    url: "https://t.me/zebuild",
-                    merchant_url: "https://t.me/zebuild"
+                    display_text: "YouTube",
+                    url: "https://youtube.com/@yifanoffc",
+                    merchant_url: "https://youtube.com/@yifanoffc"
                 })
             }
         ]
@@ -318,22 +318,22 @@ await sock.sendMessage(jid, {
 Send interactive messages with document from buffer (file system) without contextInfo and externalAdReply - **Note: Documents only support buffer**:
 
 ```javascript
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @zebuild",
+        footer: "YouTube : @yifanoffc",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "zebuild.pdf",
+        fileName: "yifantzyy.js",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         buttons: [
             {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: "Telegram",
-                    url: "https://t.me/zebuild",
-                    merchant_url: "https://t.me/zebuild"
+                    display_text: "YouTube",
+                    url: "https://youtube.com/@yifanoffc",
+                    merchant_url: "https://youtube.com/@yifanoffc"
                 })
             }
         ]
@@ -348,7 +348,7 @@ Send payment request messages with custom background and sticker:
 let quotedType = m.quoted?.mtype || '';
 let quotedContent = JSON.stringify({ [quotedType]: m.quoted }, null, 2);
 
-await sock.sendMessage(jid, {
+await YifanModss.sendMessage(jid, {
     requestPaymentMessage: {
         currency: "IDR",
         amount: 10000000,
